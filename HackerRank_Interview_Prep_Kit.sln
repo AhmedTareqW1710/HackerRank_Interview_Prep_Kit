@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerRank_New_Year_Chaos", "HackerRank_New_Year_Chaos\HackerRank_New_Year_Chaos.csproj", "{C9E23D00-CF8B-4A37-9893-E9A17F6017BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerRank.2DArray_DS", "HackerRank.2DArray_DS\HackerRank.2DArray_DS.csproj", "{EA2820B9-D7EA-4FD8-B3F8-1C3BFC3B0692}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerRank_Arrays_Left_Rotation", "HackerRank_Arrays_Left_Rotation\HackerRank_Arrays_Left_Rotation.csproj", "{6BA69179-3AD3-44C9-9A9A-6DFC0A098D86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C9E23D00-CF8B-4A37-9893-E9A17F6017BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9E23D00-CF8B-4A37-9893-E9A17F6017BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9E23D00-CF8B-4A37-9893-E9A17F6017BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA2820B9-D7EA-4FD8-B3F8-1C3BFC3B0692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA2820B9-D7EA-4FD8-B3F8-1C3BFC3B0692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA2820B9-D7EA-4FD8-B3F8-1C3BFC3B0692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA2820B9-D7EA-4FD8-B3F8-1C3BFC3B0692}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BA69179-3AD3-44C9-9A9A-6DFC0A098D86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA69179-3AD3-44C9-9A9A-6DFC0A098D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA69179-3AD3-44C9-9A9A-6DFC0A098D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA69179-3AD3-44C9-9A9A-6DFC0A098D86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
