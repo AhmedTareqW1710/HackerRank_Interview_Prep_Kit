@@ -72,6 +72,7 @@ class Solution
         //}
         #endregion
 
+
         Console.WriteLine(bribesCount);
         return;
 
