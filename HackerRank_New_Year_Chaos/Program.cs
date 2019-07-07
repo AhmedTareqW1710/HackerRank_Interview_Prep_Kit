@@ -18,36 +18,30 @@ class Solution
     // Complete the minimumBribes function below.
     static void minimumBribes(int[] q)
     {
+
+
+        #region 60 % test cases passed 
         int bribesCount = 0;
-        List<int> tempList = new List<int>();
-        //tempList.Add(-100);
-        //tempList.AddRange(q);
 
-        // Initial position [1,2,3,4,5,6,7,8,9]
-
-        for (int i = 0; i < q.Length - 1; i++)
+        for (int i = q.Length - 1; i >= 0; i--)
         {
-            if (q[i] - 1 == i)
-                continue;
-
-            if ((q[i] - 1) - i > 2)
+            if (q[i] - (i + 1) > 2)
             {
                 Console.WriteLine("Too chaotic");
                 return;
             }
-            for (int j = i + 1; j < q.Length; j++)
+            for (int j = 0 >  q[i]-2 ? 0: q[i] - 2; j < i; j++)
             {
-                if (q[i] > q[j])
+                if (q[i] < q[j])
                 {
-                    var temp = q[i];
-                    q[i] = q[j];
-                    q[j] = temp;
+                   
                     bribesCount++;
 
                 }
             }
         }
-
+        Console.WriteLine(bribesCount);
+        #endregion
         #region Old solution
         //if (tempList[i] == -100)
         //{
@@ -73,7 +67,7 @@ class Solution
         #endregion
 
 
-        Console.WriteLine(bribesCount);
+
         return;
 
     }

@@ -19,24 +19,33 @@ class Solution
     static long arrayManipulation(int n, int[][] queries)
     {
         long max = 0;
-        int rowsIndex = 0;
-        int columnsIndex = 0;
+        long tempMax = 0;
 
-        int[] zerosArr = new int[n];
+        //int rowsIndex = 0;
+        //int columnsIndex = 0;
 
-        for (rowsIndex = 0; rowsIndex < queries.Length; rowsIndex++)
+        long[] zerosArr = new long[n + 1];
+
+        for (int queriesIndex = 0; queriesIndex < queries.Length; queriesIndex++)
         {
-            for (int i = queries[rowsIndex][columnsIndex]; i <= queries[rowsIndex][columnsIndex + 1]; i++)
+            zerosArr[queries[queriesIndex][0]] += queries[queriesIndex][2];
+            if (queries[queriesIndex][1] + 1 <= n)
             {
-                if (i <= n-1)
-                {
-                    zerosArr[i] += queries[rowsIndex][columnsIndex + 2];
+                zerosArr[queries[queriesIndex][1] + 1] -= queries[queriesIndex][2];
+            }
 
-                }
+        }
+
+        for (int i = 1; i <= n; i++)
+        {
+            tempMax += zerosArr[i];
+            if (tempMax > max)
+            {
+                max = tempMax;
             }
         }
 
-        max = zerosArr.Max();
+       
         return max;
 
     }
@@ -61,7 +70,7 @@ class Solution
         long result = arrayManipulation(n, queries);
 
         Console.WriteLine(result);
-        Console.Read();
+        //Console.Read();
         //textWriter.WriteLine(result);
 
         //textWriter.Flush();
